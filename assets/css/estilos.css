@@ -1,0 +1,159 @@
+*{   /* reserteo incial sugeridos en clase */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "roboto", sans-serif;
+    background: #e8ebe4;
+}
+
+.contenedor{
+    display: flex;
+    height: 100vh;
+         }
+
+.col-contactos{
+    flex: 0 0 28%; /*aprendí que el primer 0 es que no crecerá, el segundo no encogerá y 28% es el ancho fijo */
+    background: #fff;
+    border-right: 1px solid #bec1bb;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .col-principal{
+    flex: 1; /*el 1 significa que ocupa todo el espacio sobrante, en este caso el 72% */
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* central verticalmente*/
+    align-items: center; /* central horizontalmente */
+    text-align: center; /* central los textos */
+    padding: 2rem;
+}
+
+.col-principal h1 {
+    font-size: 32px;
+    color: #1b1f21;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+.lista-contactos{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.contacto:hover {
+    background: #f7bfb6;
+}
+
+.usuario-principal{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #e8ebe4;
+}
+
+.img-usuario{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info-usuario h3 {
+    margin: 0;
+    color: #1b1f21;
+    font-weight: 500;
+    }
+
+.estado{
+    font-size: 14px;
+    color: #828485;
+}
+
+.ico-menu{
+    width: 24px;
+    margin-left: auto; /* este lo empuja a la derecha */
+    cursor: pointer;
+}
+
+.nuevo-chat{
+    padding: 0.8rem;
+}
+
+.btn-chat {
+    width: 100%;
+    padding: 1rem;
+    background: #a491d2;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+    cursor: pointer;
+}
+
+.btn-chat:hover {
+    background: #cdc3e6;
+}
+
+.info-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto{
+    display: flex; /* para alinear horizontalmente fotos y textos */
+    align-items: center; /* central verticalmente */
+    gap: 1rem; /* para separar foto de texto */
+    padding: 0.7rem; /* margen interno sugerido por el profesor... se ve mejor */
+    border-bottom: 1px solid #e8ebe4; /* linea divisoria */
+    cursor: pointer; /* mano al pasar */
+    flex-shrink: 0;
+}
+.img-contacto{     /*solución que encontré para que la imagen fuese redonda */
+    width: 45px;
+    height: 45px;
+    border-radius:50%; /* redondo perfecto */
+    object-fit: cover; /* sugerencia recibida para evitar que se deforme */
+}
+
+
+.nombre{
+    font-weight: 500;
+    color:#1b1f21; /*busqué el más parecido */
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.ultimo{
+    font-size: 14px;
+    color: #828485; /* el más parecido */
+    line-height: 1.2;
+}
+
+.icon-chat {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.img-centro {
+    width: 260px;
+    margin-bottom: 1.5rem;
+}
+.btn-chat:focus {
+    outline: none;
+    box-shadow: none;
+}
